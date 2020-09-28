@@ -28,6 +28,9 @@ app.post('/api/notes', function (req, res) {
     res.json(notes);
  });
 
+ require("./routes/htmlroute")(app);
+ require("./routes/apiroute")(app); 
+
 app.listen(PORT, function () {
     console.log("App listening on PORT" + PORT);
 });
