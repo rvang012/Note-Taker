@@ -7,9 +7,9 @@ module.exports = function (app) {
     })
 };
 
-app.get("/api.notes", function (req, res) {
-    res.json(date[Number(req.params.id)]);
-});
+app.get("/api/notes", function (req, res) {
+    res.json(data[Number(req.params.id)]);
+  });
 
 app.post("/api/notes", function (req, res) {
     let newNote = req.body;
